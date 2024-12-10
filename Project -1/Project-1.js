@@ -64,13 +64,13 @@
 
 
 
-//Project - 6 : Write a JavaScript program to calculate given formulas
+//Project - 6 : Write a JavaScript program to calculate given formulas in both side are equal or not equal and output is given is it equal side or not.
 
 //1. a2 — b2 = (a-b)(a+b) :
 
 // let a=5,b=3,formula1;
 
-// formula1 = (a-b)*(a+b);
+// formula1 = (a*a) - (b*b);
 
 // console.log("Formula 1 is ",formula1);
 
@@ -110,7 +110,7 @@
 
 // console.log("Formula 4 is ",formula4);
 
-//Output : Formula 4 is 4`
+//Output : Formula 4 is 4
 
 
 
