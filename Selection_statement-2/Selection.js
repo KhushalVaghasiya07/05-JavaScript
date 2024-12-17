@@ -14,9 +14,4 @@
 // {
 //       console.log("You are Eligible for Voting");
 // }
-
-
-
-
-
-
+            
