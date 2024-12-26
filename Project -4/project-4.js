@@ -1,10 +1,20 @@
 // 1. Write a JAVASCRIPT Program to print a greeting message using with argument no return type function when
 //  call a function without argument at that time print message Good Morning.
 
+// let n;
+// function greet(g){
+//     if(g == null)
+//     {
+//         console.log("Good morning");
+//     }
+//     else
+//     {
+//         console.log("Hello world");
+//     }
+// }
+// greet(0);
 
-function greet(){
-    
-}
+
 
 
 // ===========================================================================================================
