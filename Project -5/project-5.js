@@ -328,9 +328,9 @@
 // Input:- ['5', 32, 'Daniel'];
 // Output: 5,32,Daniel
 
-let input = ['5', 32, 'Daniel','khushal'];
+// let input = ['5', 32, 'Daniel','khushal'];
 
-let output = input.toString();
-console.log(output);
+// let output = input.toString();
+// console.log(output);
 
 // output: 5,32,Daniel,khushal
