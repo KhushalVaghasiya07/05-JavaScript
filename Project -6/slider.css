@@ -1,0 +1,79 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(245, 245, 178); /* Light neutral background */
+    font-family: Arial, sans-serif;
+}
+
+/* Card Styling */
+.card {
+    background-color: rgb(181, 181, 241); /* Subtle blue background for the card */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 100px;
+    width: 900px;
+    height: 600px;
+    text-align: center;
+}
+
+/* Slider Styling */
+.slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.slider img {
+    width: 500px;
+    height:350px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Buttons */
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.prev {
+    position: absolute;
+    left: -70px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.next {
+    position: absolute;
+    right: -70px;
+    top: 50%;
+    transform: translateY(-50%);
+}
