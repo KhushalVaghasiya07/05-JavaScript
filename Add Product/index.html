@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Professional Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="images/shopping-logo-design-template_446318-130.avif" alt="ShopEase Logo" class="logo">
+                <h1>Phonewala</h1>
+            </div>
+            <button class="cart-btn">🛒 Cart <span id="cartCount">0</span></button>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        
+        <!-- PRODUCT FORM -->
+        <div class="product-form">
+            <form id="productForm">
+                <h2>Add Mobile</h2>
+                <input type="text" id="productName" placeholder="Product Name" required>
+                <input type="number" id="productPrice" placeholder="Product Price" required>
+                <input type="text" id="productImage" placeholder="Image URL" required>
+                <input type="submit" value="Add Product">
+            </form>
+        </div>
+
+        <!-- PRODUCT LIST -->
+        <div class="product-list" id="productList">
+            <!-- Products will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="Add-to-Cart.js"></script>
+</body>
+</html>
