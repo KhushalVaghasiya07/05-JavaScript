@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f4f9f4 50%, #ffc107 50%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.container {
+  background-color: #f4f9f4;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  max-width: 500px;
+  width: 90%;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeInUp 0.8s forwards;
+}
+.checkmark-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #28a745;
+  margin: 0 auto 25px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  animation: scaleIn 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s forwards;
+}
+.checkmark {
+  width: 40px;
+  height: 20px;
+  border-left: 4px solid white;
+  border-bottom: 4px solid white;
+  transform: rotate(-45deg) scale(0);
+  position: absolute;
+  animation: checkmarkDraw 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.8s forwards,
+             pulse 1.5s 1.5s infinite;
+}
+h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #333;
+  opacity: 0;
+  animation: fadeIn 0.8s 1s forwards;
+}
+p {
+  color: #555;
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0;
+  animation: fadeIn 0.8s 1.2s forwards;
+}
+.highlight {
+  color: #ff6b00;
+  font-weight: bold;
+}
+.social-links {
+  margin: 25px 0;
+  opacity: 0;
+  animation: fadeIn 0.8s 1.4s forwards;
+}
+.social-links a {
+  margin: 0 12px;
+  text-decoration: none;
+  font-size: 24px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+.social-links a:hover {
+  transform: translateY(-5px) scale(1.1);
+}
+.visit-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+  opacity: 0;
+  animation: fadeIn 0.8s 1.6s forwards;
+}
+.visit-btn:hover {
+  background-color: #218838;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
+}
+.fire-emoji {
+  display: inline-block;
+  animation: bounce 0.8s infinite alternate;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes scaleIn {
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes checkmarkDraw {
+  to {
+    transform: rotate(-45deg) scale(1);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: rotate(-45deg) scale(1);
+  }
+  50% {
+    transform: rotate(-45deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(-45deg) scale(1);
+  }
+}
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
