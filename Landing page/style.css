@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: #1a73e8;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav .logo h1 {
+    font-size: 30px;
+}
+
+nav .nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav .nav-links li {
+    margin: 0 15px;
+}
+
+nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    background: url('your-image.jpg') center/cover no-repeat;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: #fff;
+    color: #1a73e8;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #1a73e8;
+    color: #fff;
+}
+
+.features, .pricing, .contact {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.features .feature-item {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+}
+
+.features .feature-item .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.pricing .pricing-option {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background: #1a73e8;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
